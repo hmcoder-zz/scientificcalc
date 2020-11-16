@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora Científica</string>
+    <string name="addition_button">Adição</string>
+    <string name="subtraction_button">Subtração</string>
+    <string name="multiply_button">Multiplicação</string>
+    <string name="division_button">Divisão</string>
+    <string name="squareroot_button">Raiz Quadrada</string>
+    <string name="module_button">Módulo</string>
+    <string name="factorial_button">Fatorial</string>
+    <string name="square_button">Elevado ao Quadrado</string>
+    <string name="inverse_button">Inverso</string>
+    <string name="logarithm_button">Logarítimo</string>
+    <string name="sin_button">Seno</string>
+    <string name="cos_button">Cosseno</string>
+    <string name="tan_button">Tangente</string>
+    <string name="naturallogarithm_button">Logarítmo Natural</string>
+    <string name="equals_button">Igual</string>
+    <string name="raisedtopower_button">Evevado a Potência</string>
+    <string name="changesignal_button">Mudar Sinal</string>
+    <string name="asin_button">Arco Seno</string>
+    <string name="acos_button">Arco Cosseno</string>
+    <string name="atan_button">Arco Tangente</string>
+</resources>

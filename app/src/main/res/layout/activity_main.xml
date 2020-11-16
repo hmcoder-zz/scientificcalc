@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="231dp" />
+
+    <TextView
+        android:id="@+id/btInvSin"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="-Sin"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSin"
+        app:layout_constraintEnd_toStartOf="@+id/btInvCos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/btTwo"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btZero"
+        app:layout_constraintEnd_toStartOf="@+id/btThree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btOne"
+        app:layout_constraintTop_toBottomOf="@+id/btFive" />
+
+    <TextView
+        android:id="@+id/btSix"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btThree"
+        app:layout_constraintEnd_toStartOf="@+id/btSubtraction"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFive"
+        app:layout_constraintTop_toBottomOf="@+id/btNine" />
+
+    <TextView
+        android:id="@+id/btChangeSinal"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="±"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btZero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btInverse"
+        app:layout_constraintTop_toBottomOf="@+id/btOne" />
+
+    <TextView
+        android:id="@+id/btOne"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btChangeSinal"
+        app:layout_constraintEnd_toStartOf="@+id/btTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFactorial"
+        app:layout_constraintTop_toBottomOf="@+id/btFour" />
+
+    <TextView
+        android:id="@+id/btMultiply"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="x"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSubtraction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNine"
+        app:layout_constraintTop_toBottomOf="@+id/btDivision" />
+
+    <TextView
+        android:id="@+id/btReset"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="AC"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btEight"
+        app:layout_constraintEnd_toStartOf="@+id/btBack"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSquare"
+        app:layout_constraintTop_toBottomOf="@+id/btTan" />
+
+    <TextView
+        android:id="@+id/btPercent"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btBack"
+        app:layout_constraintEnd_toStartOf="@+id/btModule"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btTan"
+        app:layout_constraintTop_toBottomOf="@+id/btLog" />
+
+    <TextView
+        android:id="@+id/btNatLog"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Ln"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btModule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btLog"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/btFour"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btOne"
+        app:layout_constraintEnd_toStartOf="@+id/btFive"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btPi"
+        app:layout_constraintTop_toBottomOf="@+id/btSeven" />
+
+    <TextView
+        android:id="@+id/btNine"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSix"
+        app:layout_constraintEnd_toStartOf="@+id/btMultiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btEight"
+        app:layout_constraintTop_toBottomOf="@+id/btBack" />
+
+    <TextView
+        android:id="@+id/btEight"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btFive"
+        app:layout_constraintEnd_toStartOf="@+id/btNine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSeven"
+        app:layout_constraintTop_toBottomOf="@+id/btReset" />
+
+    <TextView
+        android:id="@+id/btZero"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btComa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btChangeSinal"
+        app:layout_constraintTop_toBottomOf="@+id/btTwo" />
+
+    <TextView
+        android:id="@+id/btTan"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Tan"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btReset"
+        app:layout_constraintEnd_toStartOf="@+id/btPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btCos"
+        app:layout_constraintTop_toBottomOf="@+id/btInvTan" />
+
+    <TextView
+        android:id="@+id/btAddition"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btEquals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btThree"
+        app:layout_constraintTop_toBottomOf="@+id/btSubtraction" />
+
+    <TextView
+        android:id="@+id/btPi"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="π"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btFactorial"
+        app:layout_constraintEnd_toStartOf="@+id/btFour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSquareRoot" />
+
+    <TextView
+        android:id="@+id/btDivision"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="÷"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btMultiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBack"
+        app:layout_constraintTop_toBottomOf="@+id/btModule" />
+
+    <TextView
+        android:id="@+id/btSeven"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btFour"
+        app:layout_constraintEnd_toStartOf="@+id/btEight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSquareRoot"
+        app:layout_constraintTop_toBottomOf="@+id/btSquare" />
+
+    <TextView
+        android:id="@+id/btSquareRoot"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="√"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btPi"
+        app:layout_constraintEnd_toStartOf="@+id/btSeven"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btExponent" />
+
+    <TextView
+        android:id="@+id/btInvTan"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="-Tan"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btTan"
+        app:layout_constraintEnd_toStartOf="@+id/btLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btInvCos"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/btThree"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btComa"
+        app:layout_constraintEnd_toStartOf="@+id/btAddition"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btSix" />
+
+    <TextView
+        android:id="@+id/btBack"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btNine"
+        app:layout_constraintEnd_toStartOf="@+id/btDivision"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btReset"
+        app:layout_constraintTop_toBottomOf="@+id/btPercent" />
+
+    <TextView
+        android:id="@+id/btEquals"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="="
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btComa"
+        app:layout_constraintTop_toBottomOf="@+id/btAddition" />
+
+    <TextView
+        android:id="@+id/btExponent"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="xʸ"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSquareRoot"
+        app:layout_constraintEnd_toStartOf="@+id/btSquare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSin" />
+
+    <TextView
+        android:id="@+id/btSin"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Sin"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btExponent"
+        app:layout_constraintEnd_toStartOf="@+id/btCos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btInvSin" />
+
+    <TextView
+        android:id="@+id/btInvCos"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="-Cos"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btCos"
+        app:layout_constraintEnd_toStartOf="@+id/btInvTan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btInvSin"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/btLog"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Log"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btPercent"
+        app:layout_constraintEnd_toStartOf="@+id/btNatLog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btInvTan"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/btComa"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text=","
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btEquals"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btZero"
+        app:layout_constraintTop_toBottomOf="@+id/btThree" />
+
+    <TextView
+        android:id="@+id/btModule"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Mod"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btDivision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btPercent"
+        app:layout_constraintTop_toBottomOf="@+id/btNatLog" />
+
+    <TextView
+        android:id="@+id/btFactorial"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btInverse"
+        app:layout_constraintEnd_toStartOf="@+id/btOne"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btPi" />
+
+    <TextView
+        android:id="@+id/btSquare"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="x²"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSeven"
+        app:layout_constraintEnd_toStartOf="@+id/btReset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btExponent"
+        app:layout_constraintTop_toBottomOf="@+id/btCos" />
+
+    <TextView
+        android:id="@+id/btInverse"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="1/x"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btChangeSinal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btFactorial" />
+
+    <TextView
+        android:id="@+id/btSubtraction"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btAddition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSix"
+        app:layout_constraintTop_toBottomOf="@+id/btMultiply" />
+
+    <TextView
+        android:id="@+id/btFive"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btTwo"
+        app:layout_constraintEnd_toStartOf="@+id/btSix"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFour"
+        app:layout_constraintTop_toBottomOf="@+id/btEight" />
+
+    <TextView
+        android:id="@+id/btCos"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#1B1A1A"
+        android:gravity="center"
+        android:text="Cos"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSquare"
+        app:layout_constraintEnd_toStartOf="@+id/btTan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSin"
+        app:layout_constraintTop_toBottomOf="@+id/btInvCos" />
+
+    <TextView
+        android:id="@+id/tvCalc"
+        android:layout_width="356dp"
+        android:layout_height="41dp"
+        android:background="#3C3C3C"
+        android:maxLines="10"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumbers"
+        android:layout_width="358dp"
+        android:layout_height="170dp"
+        android:background="#3C3C3C"
+        android:maxLines="10"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tvCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

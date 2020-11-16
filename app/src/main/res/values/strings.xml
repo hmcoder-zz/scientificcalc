@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Scientific Calculator</string>
+    
+    <string name="addition_button">Addition</string>
+    <string name="subtraction_button">Subtraction</string>
+    <string name="multiply_button">Multiply</string>
+    <string name="division_button">Division</string>
+    <string name="equals_button">Equals</string>
+    <string name="squareroot_button">Square Root</string>
+    <string name="module_button">Module</string>
+    <string name="factorial_button">Factorial</string>
+    <string name="raisedtopower_button">Raised to Power</string>
+    <string name="square_button">Square</string>
+    <string name="inverse_button">Inverse</string>
+    <string name="logarithm_button">Logarithm</string>
+    <string name="sin_button">Sin</string>
+    <string name="cos_button">Cos</string>
+    <string name="tan_button">Tan</string>
+    <string name="asin_button">aSin</string>
+    <string name="acos_button">aCos</string>
+    <string name="atan_button">aTan</string>
+    <string name="naturallogarithm_button">Natural Logarithm</string>
+    <string name="changesignal_button">Change Signal</string>
+</resources>
